@@ -10,6 +10,25 @@
 	<script type="text/javascript" src="./processing.js"></script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="animsition.min.js"></script>
+  <script>
+  $(function() {
+   $(".botan").animsition({
+        inClass : 'fade-in', //ページをロードした際のアニメーション
+        outClass : 'fade-out', //ページを出る際のアニメーション
+        inDuration : 1500, //ページロードの際の表示までの時間
+        outDuration : 500, //ページが消えるまでの時間
+        linkElement : '.animsition-link', //ページ遷移アニメーションをするクラス
+        touchSupport : true,
+        loading : true, //ロードを有効/無効
+        loadingParentElement : 'body', //ロード中を表示するラッパー要素
+        loadingClass : 'animsition-loading', //ロードと表示するクラス
+        unSupportCss : [ 'animation-duration',
+                         '-webkit-animation-duration',
+                         '-o-animation-duration'
+                       ]
+   });
+  });
+  </script>
 </head>
 <body>
 
@@ -29,25 +48,7 @@ document.write("<canvas data-processing-sources='"+img[n]+"'></canvas>");
 </SCRIPT>
 </div>
 
-<script>
-$(function() {
- $(".botan").animsition({
-      inClass : 'fade-in', //ページをロードした際のアニメーション
-      outClass : 'fade-out', //ページを出る際のアニメーション
-      inDuration : 1500, //ページロードの際の表示までの時間
-      outDuration : 500, //ページが消えるまでの時間
-      linkElement : '.animsition-link', //ページ遷移アニメーションをするクラス
-      touchSupport : true,
-      loading : true, //ロードを有効/無効
-      loadingParentElement : 'body', //ロード中を表示するラッパー要素
-      loadingClass : 'animsition-loading', //ロードと表示するクラス
-      unSupportCss : [ 'animation-duration',
-                       '-webkit-animation-duration',
-                       '-o-animation-duration'
-                     ]
- });
-});
-</script>
+
 
 </body>
 </html>
