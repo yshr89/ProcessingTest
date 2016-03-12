@@ -1,2 +1,2 @@
-header('Location: https://processingtest.herokuapp.com/index.html');
+header('Location: index.html');
 exit;
