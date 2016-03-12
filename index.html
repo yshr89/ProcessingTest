@@ -32,23 +32,60 @@
 </head>
 <body>
 
+<div id="wrapper">
+<!-- タイトル画面のボタン -->
 <div class="botan">
-  <a href="./K.html" class="animsition-link">KB × Processing</a>
+  <a href="#obj" class="animsition-link">KB × Processing</a>
+  <script language="JavaScript">
+  // ランダムに背景を表示する
+    img = new Array();
+    img[0] = "./processing/processing.pde";
+    img[1] = "./boid/boid.pde";
+    img[2] = "./thorn/thorn.pde";
+    img[3] = "./hexagon/hexagon.pde";
 
-<SCRIPT language="JavaScript">
-// ランダムに背景を表示する
-img = new Array();
-img[0] = "./processing/processing.pde";
-img[1] = "./boid/boid.pde";
-img[2] = "./thorn/thorn.pde";
-img[3] = "./hexagon/hexagon.pde";
-
-n = Math.floor(Math.random()*img.length);
-document.write("<canvas data-processing-sources='"+img[n]+"'></canvas>");
-</SCRIPT>
+    n = Math.floor(Math.random()*img.length);
+    document.write("<canvas data-processing-sources='"+img[n]+"'></canvas>");
+  </script>
 </div>
 
 
+<div class="description">
+  <p class="des-text">texttexttexttexttexttexttexttext</p>
+</div>
+
+<div class="seconddescription">
+  <p class="meta-text">aaaaa</p>
+  <p class="des-text">bbbbbbbbbbbb</p>
+  <p class="meta-text">ccccc</p>
+</div>
+
+
+<div class="processing-two">
+  <canvas class="haikei" data-processing-sources="./aaa/aaa.pde"></canvas>
+  <p class="processing-two-text">testtesttesttesttesttesttest</p>
+</div>
+
+
+<p class="processing-three-text">kkkkkkkkkkk</p>
+
+
+
+<div class="K">
+  <canvas id="obj" data-processing-sources="./K_new/K_new.pde"></canvas>
+</div>
+
+
+<footer>
+  <p>
+		<small>
+			by sazuka
+			&copy; 2016 <a href="http://www.bunmeisha.co.jp">bunmeisha</a>
+		</small>
+	</p>
+</footer>
+
+</div>
 
 </body>
 </html>

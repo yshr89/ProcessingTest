@@ -13,7 +13,7 @@ void setup() {
 void draw() {
   drawStar(random(width), random(height),60); 
   //drawStar(300, 300, 60); 
-  if(i < 600){
+  if(i < 660){
     i = i + 1;
   }else{
     fill(0);

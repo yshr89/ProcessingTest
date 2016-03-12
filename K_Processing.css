@@ -23,14 +23,19 @@ body{
 	background: #000000;
 	font: 16px/20px "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'メイリオ',Meiryo,Helvetica,Arial,Sans-Serif;
 	color: #ffffff;
+	background-size: cover;
+}
+
+#wrapper{
+
 }
 
 .botan{
-width: 100%;
+	width: 100%;
 }
 
 .haikei{
-	position: fixed;
+	width: 100%;
 	right: 0;
 	top: 0;
 	z-index: 1;
@@ -57,19 +62,92 @@ width: 100%;
 }
 
 
+.description{
+	position: relative;
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+  top: 0;
+	height: 200px;
+	width: 66.6%;
+	line-height: 200px;
+	float: left;
 
-.K{
-	text-align: center;
-	margin: 0 auto;
 }
 
-.obj{
+.seconddescription{
+	position: relative;
+	background-color: rgb(255, 255, 255);
+	color: rgb(175, 0, 0);
+  top: 0;
+	height: 200px;
+	width: 33.33333333%;
+	line-height: 27.4px;
+	float: left;
+	border-left: 1px solid #e3e3e3;
+}
+
+.des-text{
+	text-align: center;
+	font-size: 26px;
+	font-family: Times New Roman;
+	text-decoration:none;
+}
+
+.meta-text{
+	text-align: center;
+	font-size: 20px;
+	font-family: Times New Roman;
+	text-decoration:none;
+}
+
+.processing-two{
+	position: relative;
+	top: 0;
+	left: 0;
+
+}
+
+.processing-two-text{
 	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
 	margin: auto;
+	width:600px;
+	height: 600px;
+	line-height: 800px;
+	font-family: Times New Roman;
+	font-size:30px;
+	text-decoration:none;
+	text-align:center;
+	z-index: 2;
+}
+
+.processing-three-text{
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	width:600px;
+	height: 600px;
+	line-height: 600px;
+	font-family: Times New Roman;
+	font-size:30px;
+	text-decoration:none;
+	text-align:center;
+	z-index: 2;
+}
+
+.K{
+	text-align: center;
+	margin: 0 auto;
+}
+
+#obj{
+	margin-top: 500px;
+	margin-bottom: 200px;
 }
 
 .animsition-link{
@@ -86,3 +164,23 @@ width: 100%;
 	background: #ffffff;
 	border:1px solid #ffffff;
 }
+
+
+footer:before{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+footer p{
+	width: 200px;
+	margin: 50px auto 20px;
+	padding: 5px;
+	text-align: center;
+	font-size: 75%;
+}
+footer p small{
+		color: #7c7c7c;
+		display: block;
+	}
+footer a{color: #7c7c7c}
