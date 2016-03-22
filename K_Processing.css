@@ -141,6 +141,7 @@ ul#container li.seconddescription{
 }
 
 .processing-two-text{
+	background-color: rgb(14, 97, 138);
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -148,7 +149,7 @@ ul#container li.seconddescription{
 	left: 0;
 	margin: auto;
 	width:600px;
-	height: 600px;
+	height: 800px;
 	line-height: 800px;
 	font-family: Times New Roman;
 	font-size:80px;

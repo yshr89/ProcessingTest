@@ -1,7 +1,7 @@
 int i = 0;
 
 void setup() {
-  size(1920,600);
+  size(1920,800);
   //noStroke();
   smooth();
   background(0);
@@ -18,7 +18,7 @@ void draw() {
   }else{
     fill(0);
     noStroke();
-    rect(960, 300, width, height);
+    rect(960, 400, width, height);
     i = 0;
   }
   

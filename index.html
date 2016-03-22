@@ -9,54 +9,16 @@
 	<!-- JavaScriptの読込 -->
 	<script type="text/javascript" src="./processing.js"></script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="animsition.min.js"></script>
-  <!-- jQuery.jsの読み込み -->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-<!-- スムーズスクロール部分の記述 -->
-<script>
-$(function(){
-   // #で始まるアンカーをクリックした場合に処理
-   $('a[href^=#]').click(function() {
-      // スクロールの速度
-      var speed = 1500; // ミリ秒
-      // アンカーの値取得
-      var href= $(this).attr("href");
-      // 移動先を取得
-      var target = $(href == "#" || href == "" ? 'html' : href);
-      // 移動先を数値で取得
-      var position = target.offset().top;
-      // スムーススクロール
-      $('body,html').animate({scrollTop:position}, speed, 'swing');
-      return false;
-   });
-});
-</script>
-  <script>
-  $(function() {
-   $(".botan").animsition({
-        inClass : 'fade-in', //ページをロードした際のアニメーション
-        outClass : 'fade-out', //ページを出る際のアニメーション
-        inDuration : 1500, //ページロードの際の表示までの時間
-        outDuration : 500, //ページが消えるまでの時間
-        linkElement : '.animsition-link', //ページ遷移アニメーションをするクラス
-        touchSupport : true,
-        loading : true, //ロードを有効/無効
-        loadingParentElement : 'body', //ロード中を表示するラッパー要素
-        loadingClass : 'animsition-loading', //ロードと表示するクラス
-        unSupportCss : [ 'animation-duration',
-                         '-webkit-animation-duration',
-                         '-o-animation-duration'
-                       ]
-   });
-  });
-  </script>
+  <!--スムーズスクロール-->
+  <script src="./smooth-scroll.js"></script>
+
 </head>
 <body>
 
 <div id="wrapper">
 <!-- タイトル画面のボタン -->
 <div class="botan">
-  <a href="#container" class="animsition-link">Bunmeisha × Processing</a>
+  <a href="#container" data-scroll class="animsition-link">Bunmeisha × Processing</a>
   <script language="JavaScript">
   // ランダムに背景を表示する
     img = new Array();
@@ -112,6 +74,19 @@ $(function(){
 </footer>
 
 </div>
+
+
+
+<script>
+	// スムーススクロールを起動する
+	smoothScroll.init({
+    speed: 1500, //目的地までのスピード
+    updateURL: false,		// URLを[#〜]に変更したくない
+    easing: 'easeInOutQuad', //移動開始時と終了時がゆるやかになる
+
+  }) ;
+</script>
+
 
 </body>
 </html>
