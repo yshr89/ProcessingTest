@@ -25,7 +25,7 @@
     img[0] = "./processing/processing.pde";
     img[1] = "./boid/boid.pde";
     img[2] = "./thorn/thorn.pde";
-    img[3] = "./hexagon/hexagon.pde";
+    //img[3] = "./hexagon/hexagon.pde";
 
     n = Math.floor(Math.random()*img.length);
     document.write("<canvas data-processing-sources='"+img[n]+"'></canvas>");
@@ -44,18 +44,35 @@
   <li class="seconddescription">
     <p class="meta-text">Practice field.</p>
     <p class="description-text">Bunmeisha × Processing</p>
-    <p class="metaB-text">March 22, 2016</p>
+    <p class="metaB-text">March 25, 2016</p>
   </li>
 </ul>
 </div>
 
 <div class="processing-two">
-  <canvas class="haikei" data-processing-sources="./aaa/aaa.pde"></canvas>
+  <canvas class="haikei" data-processing-sources="./line/line.pde"></canvas>
   <p class="processing-two-text">Generative Design</p>
 </div>
 
+<p class="processing-three-text">文　　　　　　明　　　　　　社　　　　　　の　　　　　　新　　　　　　し　　　　　　い　　　　　　
+  カ　　　　　　タ　　　　　　チ</p>
 
-<p class="processing-three-text">新しい文明社にできることは...</p>
+
+
+<div class="cover section1" style="height: 350px;">
+  <div class="centerBox">
+  </div>
+</div>
+<div class="cover section2" style="height: 350px;">
+  <div class="centerBox">
+    <p>Generative Design</p>
+  </div>
+</div>
+<div class="cover section3" style="height: 350px;">
+  <div class="centerBox">
+    <p>Graphic Design</p>
+  </div>
+</div>
 
 
 
@@ -85,6 +102,19 @@
     easing: 'easeInOutQuad', //移動開始時と終了時がゆるやかになる
 
   }) ;
+</script>
+
+<script>
+$(document).ready(function () {
+  wsize = $(window).width();
+  wsize = wsize / 3.5;
+  $(".processing-two-text").css("margin-top", "-" + wsize + "px");
+});
+$(window).resize(function () {
+  wsize = $(window).width();
+  wsize = wsize / 3.5;
+  $(".processing-two-text").css("margin-top", "-" + wsize + "px");
+});
 </script>
 
 

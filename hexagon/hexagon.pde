@@ -1,16 +1,13 @@
 int i = 0;
 
-void setup() {
-  size(1920,1080);
-  //noStroke();
-  smooth();
-  background(0);
-  //noLoop();
-  rectMode(CENTER);
-    frameRate(24);
-}
 
-void draw() {
+size(1920,1080);
+background(0);
+rectMode(CENTER);
+
+
+
+
   drawStar(random(width), random(height),60); 
   //drawStar(300, 300, 60); 
   if(i < 940){
@@ -22,7 +19,7 @@ void draw() {
     i = 0;
   }
   
-}
+
 
 void drawStar(float x, float y, int z) {
   stroke(80);
