@@ -131,13 +131,14 @@ ul#container li.seconddescription{
 	position: relative;
 	top: 0;
 	left: 0;
+	z-index: 1;
 }
 
 .haikei{
 	width: 100vw;
 	right: 0;
 	top: 0;
-	z-index: 1;
+
 }
 
 .processing-two-text{
@@ -154,7 +155,7 @@ ul#container li.seconddescription{
 	font-size:150px;
 	text-decoration:none;
 	text-align:center;
-	z-index: 2;
+	z-index: 10;
 
 }
 
