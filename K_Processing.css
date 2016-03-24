@@ -135,7 +135,7 @@ ul#container li.seconddescription{
 }
 
 .haikei{
-	position: absolute;
+	position: relative;
 	width: 100vw;
 	right: 0;
 	top: 0;
