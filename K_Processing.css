@@ -135,10 +135,11 @@ ul#container li.seconddescription{
 }
 
 .haikei{
+	position: absolute;
 	width: 100vw;
 	right: 0;
 	top: 0;
-
+	z-index: 1;
 }
 
 .processing-two-text{
@@ -150,9 +151,9 @@ ul#container li.seconddescription{
 	margin: auto;
 	width:100vw;
 	height: 200px;
-	line-height: 148px;
+	line-height: 150px;
 	font-family: Times New Roman;
-	font-size:150px;
+	font-size:180px;
 	text-decoration:none;
 	text-align:center;
 	z-index: 10;
@@ -187,12 +188,29 @@ ul#container li.seconddescription{
 }
 .centerBox{
 	position: absolute;
-	top: 0;
+	top: -170px;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	margin: auto;
 	margin-right: 645px;
+	width: 0;
+	height: -200px;
+	text-align: center;
+	font-family: Times New Roman;
+	font-size:150px;
+	line-height: 110px;
+	text-decoration:none;
+	z-index: 2;
+}
+.centerBox2{
+	position: absolute;
+	top: -70px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	margin-left: -10px;
 	width: 0;
 	height: -200px;
 	text-align: center;
@@ -214,7 +232,12 @@ ul#container li.seconddescription{
 	background-size: cover;
 	z-index: 1;
 }
-
+.section3{
+	height: 100vh;
+	background: url(img/testimg3.jpg) no-repeat fixed;
+	background-size: cover;
+	z-index: 1;
+}
 
 
 
