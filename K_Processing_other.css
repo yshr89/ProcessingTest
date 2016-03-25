@@ -145,7 +145,7 @@ ul#container li.seconddescription{
 .ie .processing-two-text{
 	position: relative;
 	/*position: absolute;*/
-	top: 0;
+	top: 200px;
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -159,8 +159,8 @@ ul#container li.seconddescription{
 	text-align:center;
 	z-index: 10;
 }
-.safari .processing-two-text{
-	/*position: relative;*/
+.processing-two-text{
+	/*position: relative;  ie用*/
 	position: absolute;
 	top: 200px;
 	right: 0;
@@ -176,6 +176,7 @@ ul#container li.seconddescription{
 	text-align:center;
 	z-index: 10;
 }
+
 
 .processing-three-text{
 	position: relative;
