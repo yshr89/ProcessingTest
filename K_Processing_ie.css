@@ -1,0 +1,295 @@
+@charset "utf-8";
+/* CSSリセット*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,
+pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,
+strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,
+caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,
+figure,footer,header,hgroup,menu,nav,section,summary,time,mark,
+audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;
+vertical-align:baseline;background:transparent;font-weight:normal;}
+body{line-height:1}article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section{display:block}
+ul{list-style:none}blockquote,q{quotes:none}blockquote:before,
+blockquote:after,q:before,q:after{content:none}a{margin:0;padding:0;
+font-size:100%;vertical-align:baseline;background:transparent}
+del{text-decoration:line-through}abbr[title],dfn[title]
+{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;
+margin:1em 0;padding:0}input,select{vertical-align:middle}
+/* ----------- */
+
+body{
+	background: #000000;
+	font: 16px/20px "ヒラギノ明朝 Pro W3","Hiragino Mincho Pro",'ＭＳ Ｐ明朝',"MS PMincho",Helvetica,Arial,Serif;
+	color: rgb(200, 200, 200);
+	background-size: cover;
+}
+
+#wrapper{
+
+}
+
+.botan{
+	width: 100%;
+}
+
+
+.animsition-link{
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	width:600px;
+	height: 60px;
+	font-family: Times New Roman;
+	font-size:30px;
+	text-decoration:none;
+	text-align:center;
+	line-height: 60px;
+	color: #ffffff;
+	border:1px solid #ffffff;
+	z-index: 2;
+}
+
+
+ul#container{
+	width: 100%;
+	top: 862px;
+}
+
+ul#container li{
+		height: 200px;
+		display: -moz-inline-box; /*for Firefox 2*/
+	 	display: inline-block; /*for modern*/
+	 	display: inline; /*for ie5～7*/
+}
+
+ul#container li.description{
+	background-color: rgb(0, 0, 0);
+	color: rgb(200, 200, 200);
+	display: table;
+	width: 66.666666%;
+	height: 200px;
+	float: left;
+	margin: 0 auto;
+}
+
+ul#container li.seconddescription{
+	background-color: rgb(0, 0, 0);
+	color: rgb(185, 172, 86);
+	height: 200px;
+	width: 33.33333%;
+	line-height: 27.4px;
+	float: left;
+}
+
+.des-text{
+	font-size: 22px;
+	font-family: Times New Roman;
+	display: table-cell;
+	vertical-align: middle;
+	height: 200px;
+	text-align: center;
+	line-height: 28px;
+}
+
+.des-text-jp{
+	font-size: 15px;
+	text-align: center;
+	line-height: 14px;
+}
+
+.description-text{
+	text-align: center;
+	font-size: 22px;
+	font-family: Times New Roman;
+}
+
+.meta-text{
+	margin-top: 52px;
+	margin-bottom: 1px;
+	text-align: center;
+	font-size: 12px;
+	font-family: Times New Roman;
+	text-decoration:none;
+	color: rgb(176, 172, 125);
+}
+
+.metaB-text{
+	text-align: center;
+	font-size: 12px;
+	font-family: Times New Roman;
+	text-decoration:none;
+	color: rgb(176, 172, 125);
+}
+
+.processing-two{
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.haikei{
+	position: relative;
+	width: 100vw;
+	right: 0;
+	top: 0;
+	z-index: 1;
+}
+
+.processing-two-text{
+	position: relative;
+	/*position: absolute;   モダンブラウザに対応する場合はON*/
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	width:100vw;
+	height: 200px;
+	line-height: 150px;
+	font-family: Times New Roman;
+	font-size:180px;
+	text-decoration:none;
+	text-align:center;
+	z-index: 10;
+
+}
+
+.processing-three-text{
+	position: relative;
+	top: -10px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	width:100vw;
+	height: 300px;
+	line-height: 24px;
+	margin-top: 550px;
+	font-family: Times New Roman;
+	font-size:18px;
+	text-decoration:none;
+	text-align:center;
+	z-index: 2;
+
+}
+
+
+.cover{
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.centerBox{
+	position: absolute;
+	top: -170px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	margin-right: 645px;
+	width: 0;
+	height: -200px;
+	text-align: center;
+	font-family: Times New Roman;
+	font-size:150px;
+	color: rgba(255, 255, 255, 0.9);
+	line-height: 110px;
+	text-decoration:none;
+	z-index: 2;
+}
+.centerBox2{
+	position: absolute;
+	top: -70px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	margin-left: -10px;
+	width: 0;
+	height: -200px;
+	text-align: center;
+	font-family: Times New Roman;
+	font-size:150px;
+	color: rgba(255, 255, 255, 0.9);
+	line-height: 110px;
+	text-decoration:none;
+	z-index: 2;
+}
+.section1{
+	height: 100vh;
+	background: url(img/testimg1.jpg) no-repeat fixed;
+	background-size: cover;
+	z-index: 1;
+}
+.section2{
+	height: 100vh;
+	background: url(img/testimg2.jpg) no-repeat fixed;
+	background-size: cover;
+	z-index: 1;
+}
+.section3{
+	height: 100vh;
+	background: url(img/testimg3.jpg) no-repeat fixed;
+	background-size: cover;
+	z-index: 1;
+}
+
+
+
+
+
+
+
+
+.K{
+	text-align: center;
+	margin: 0 auto;
+}
+
+#obj{
+	margin-top: 500px;
+	margin-bottom: 30px;
+}
+
+.animsition-link{
+	 color: #ffffff;
+	-webkit-transition: 0.6s ease-in-out;
+	   -moz-transition: 0.6s ease-in-out;
+	     -o-transition: 0.6s ease-in-out;
+	        transition: 0.6s ease-in-out;
+				}
+.animsition-link:hover{
+	color:#3b3b3b;
+	opacity: 0.7;
+	filter: alpha(opacity=60);
+	background: #ffffff;
+	border:1px solid #ffffff;
+}
+
+
+footer:before{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+footer p{
+	width: 200px;
+	margin: 50px auto 20px;
+	padding: 5px;
+	text-align: center;
+	font-size: 75%;
+}
+footer p small{
+		color: #7c7c7c;
+		display: block;
+	}
+footer a{color: #7c7c7c}
