@@ -4,14 +4,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>K×Processing</title>
   <!-- CSSの読込 -->
-
   <link rel="stylesheet" href="K_Processing_other.css" type="text/css" />
-
   <link rel="stylesheet" href="animsition.min.css" type="text/css" />
 	<!-- JavaScriptの読込 -->
 	<script type="text/javascript" src="./processing.js"></script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script type="text/javascript" src="./css_browser_selector.js"></script>
   <!--スムーズスクロール-->
   <script src="./smooth-scroll.js"></script>
 </head>
@@ -53,7 +50,8 @@
 
 <div class="processing-two">
   <canvas class="haikei" data-processing-sources="./line/line.pde"></canvas>
-  <p class="processing-two-text">Generative</p>
+  <p class="processing-two-text_ie">Generative</p>
+  <p class="processing-two-text_other">Generative</p>
 </div>
 
 <p class="processing-three-text">文　　　　　　明　　　　　　社　　　　　　の　　　　　　新　　　　　　し　　　　　　い　　　　　　
@@ -119,6 +117,16 @@ $(window).resize(function () {
 });
 </script>
 
+<script type=“text/javascript”>
+  $(function(){
+    var ua = navigator.userAgent; // ユーザーエージェントを代入
+    if (ua.match(“MSIE”) || ua.match(“Trident”)) { //MSIEまたはTridentが入っていたら
+      $(".processing-two-text_ie").show();
+    } else {
+      $(".processing-two-text_other").show();
+    }
+});
+</script>
 
 </body>
 </html>
