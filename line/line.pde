@@ -26,7 +26,7 @@ void draw() {
 
 void drawStar(float x, float y, int z) {
   stroke(80);
-  strokeWeight(2);
+  strokeWeight(3);
   fill(20);
 
 

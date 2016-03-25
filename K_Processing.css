@@ -200,6 +200,7 @@ ul#container li.seconddescription{
 	text-align: center;
 	font-family: Times New Roman;
 	font-size:150px;
+	color: rgba(255, 255, 255, 0.9);
 	line-height: 110px;
 	text-decoration:none;
 	z-index: 2;
@@ -217,6 +218,7 @@ ul#container li.seconddescription{
 	text-align: center;
 	font-family: Times New Roman;
 	font-size:150px;
+	color: rgba(255, 255, 255, 0.9);
 	line-height: 110px;
 	text-decoration:none;
 	z-index: 2;
