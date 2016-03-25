@@ -145,7 +145,7 @@ ul#container li.seconddescription{
 .processing-two-text{
 	/*position: relative;  ie用*/
 	position: absolute;
-	top: -50px;
+	top: 50px;
 	right: 0;
 	bottom: 0;
 	left: 0;
